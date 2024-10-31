@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.neon-button {
+    background: linear-gradient(45deg, #ff00cc, #3333ff);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: glow 1.5s infinite alternate;
+    transition: transform 0.3s;
+}
+
+.neon-button:hover {
+    transform: scale(1.1);
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 10px #ff00cc; }
+    to { box-shadow: 0 0 20px #3333ff; }
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.form-container {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+}
+/* Estilo do corpo da página */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Fundo preto */
+  font-family: Arial, sans-serif;
+}
+
+/* Container do vídeo */
+.container-video {
+  display: flex;
+  justify-content: center;  /* Centraliza horizontalmente */
+  align-items: center;      /* Centraliza verticalmente */
+  height: 100vh;            /* Altura total da tela */
+  background-color: #000;   /* Fundo preto */
+}
+
+/* Estilo do vídeo */
+#projetor {
+  width: 50%;                /* O vídeo ocupa 80% da largura da tela */
+  max-width: 600px;          /* Define uma largura máxima */
+  height: auto;  
+  border: 2px solid white;            /* Mantém a proporção do vídeo */
+  border-radius: 10px;       /* Borda arredondada */
+  object-fit: cover;
+  margin: 20px auto;         /* Garante que o vídeo preencha a área corretamente */
+}
+
+  .topic-music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(to bottom, #0b0f1d, #1a1a1a);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+    color: #fff;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .topic-music h2 {
+    font-size: 28px;
+    color: #e0e0e0;
+    margin-bottom: 15px;
+  }
+  
+  .topic-music p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  .feature {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .feature:hover {
+    transform: scale(1.05);
+  }
+ /* Estilo geral do corpo */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Fundo preto */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo do botão de compra em neon */
+.buy-button-neon {
+  display: inline-block;
+  margin: 30px auto;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #0ef;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efeito de animação neon */
+.buy-button-neon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(0, 239, 255, 0.5), transparent);
+  transition: 0.3s;
+}
+
+/* Efeito de hover */
+.buy-button-neon:hover::before {
+  left: 100%;
+}
+
+.buy-button-neon:hover {
+  background-color: #0ef;
+  color: black;
+  box-shadow: 0 0 20px #0ef, 0 0 40px #0ef, 0 0 60px #0ef;
+}
+
+/* Rodapé fixo com botão */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+.frete-gratis-banner {
+  background-color: #00000010;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
